@@ -1,0 +1,12 @@
+org/example/Service/SupplierService.class
+org/example/Service/Impl/ProductServiceImpl.class
+org/example/Controller/ProductController.class
+org/example/Service/ProductService.class
+org/example/Entity/ProductSupplier.class
+org/example/Dao/SupplierDao.class
+org/example/Controller/SupplierController.class
+org/example/App.class
+org/example/Dao/ProductDao.class
+org/example/Entity/Product.class
+org/example/Service/Impl/SupplierServiceImpl.class
+org/example/Entity/Supplier.class
