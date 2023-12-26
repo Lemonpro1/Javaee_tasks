@@ -1,7 +1,7 @@
 package tasks.RestAPI.demo.service;
 
 import tasks.RestAPI.demo.entity.Product;
-import tasks.RestAPI.demo.Mapper.ProductMapper;
+import tasks.RestAPI.demo.Dao.ProductDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,26 +10,26 @@ import java.util.List;
 @Service
 public class ProductService {
     @Autowired
-    private ProductMapper productMapper;
+    private ProductDao productDao;
 
     public List<Product> getAllProducts() {
-        return productMapper.getAllProducts();
+        return productDao.getAllProducts();
     }
 
     public Product getProductById(Long id) {
-        return productMapper.getProductById(id);
+        return productDao.getProductById(id);
     }
 
     public void createProduct(Product product) {
-        productMapper.createProduct(product);
+        productDao.createProduct(product);
     }
 
     public void updateProduct(Product product) {
-        productMapper.updateProduct(product);
+        productDao.updateProduct(product);
     }
 
     public void deleteProduct(Long id) {
-        productMapper.deleteProduct(id);
+        productDao.deleteProduct(id);
     }
 }
 
